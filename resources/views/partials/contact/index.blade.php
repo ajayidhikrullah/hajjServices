@@ -16,33 +16,34 @@
         </div>
     </div>
 
-    
+<form action="">    
+    @csrf
     <div class="site-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 form-group">
                     <label for="fname">First Name</label>
-                    <input type="text" id="fname" class="form-control form-control-lg">
+                    <input type="text" id="fname" name="first_name" ass="form-control form-control-lg">
                 </div>
                 <div class="col-md-6 form-group">
                     <label for="lname">Last Name</label>
-                    <input type="text" id="lname" class="form-control form-control-lg">
+                    <input type="text" id="lname" name="last_name" class="form-control form-control-lg">
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 form-group">
                     <label for="eaddress">Email Address</label>
-                    <input type="text" id="eaddress" class="form-control form-control-lg">
+                    <input type="text" id="eaddress" name="email" class="form-control form-control-lg">
                 </div>
                 <div class="col-md-6 form-group">
                     <label for="tel">Tel. Number</label>
-                    <input type="text" id="tel" class="form-control form-control-lg">
+                    <input type="text" id="tel" name="phone_number" class="form-control form-control-lg">
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12 form-group">
                     <label for="message">Message</label>
-                    <textarea name="" id="message" cols="30" rows="10" class="form-control"></textarea>
+                    <textarea name="" id="message" cols="30" name="body" rows="10" class="form-control"></textarea>
                 </div>
             </div>
 
@@ -53,7 +54,7 @@
             </div>
         </div>
     </div>
-
+</form>
     <div class="section-bg style-1" style="background-image: url('images/hero_1.jpg');">
         <div class="container">
             <div class="row">
