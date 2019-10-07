@@ -12,10 +12,7 @@ class PostController extends Controller
         return view('partials.home.index');
     }
 
-    public function contact()
-    {
-        return view ('partials.contact.index');   
-    }
+
 
 
 }

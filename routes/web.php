@@ -18,4 +18,6 @@ Route::get('/', function () {
 
 Route::get('/home', 'PostController@index');
 
-Route::get('/contact', 'PostController@contact');
+Route::get('/contact', 'ContactsController@contact');
+Route::post('/contact/create', 'ContactsController@create');
+

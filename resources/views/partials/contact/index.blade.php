@@ -16,10 +16,10 @@
         </div>
     </div>
 
-<form action="">    
-    @csrf
     <div class="site-section">
         <div class="container">
+        <form action="/contact/create" method="POST">    
+                    @csrf               
             <div class="row">
                 <div class="col-md-6 form-group">
                     <label for="fname">First Name</label>
@@ -43,7 +43,7 @@
             <div class="row">
                 <div class="col-md-12 form-group">
                     <label for="message">Message</label>
-                    <textarea name="" id="message" cols="30" name="body" rows="10" class="form-control"></textarea>
+                    <textarea id="message" cols="30" name="body" rows="10" class="form-control"></textarea>
                 </div>
             </div>
 
@@ -52,9 +52,10 @@
                     <input type="submit" value="Send Message" class="btn btn-primary rounded-0 px-3 px-5">
                 </div>
             </div>
+        </form>
         </div>
     </div>
-</form>
+
     <div class="section-bg style-1" style="background-image: url('images/hero_1.jpg');">
         <div class="container">
             <div class="row">
